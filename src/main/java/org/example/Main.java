@@ -37,33 +37,33 @@ public class Main {
                 } else if (numeroCuentaIngresado == cuenta3.getNumeroCuenta()) {
                     cuentaSeleccionada = cuenta3;
                 } else {
-                    System.out.println("Número de cuenta no encontrado.");
+                    System.out.println("el numero de cuenta ingresado no es valido");
                 }
             }
 
             switch (g) {
                 case 1 ->{
-                    System.out.println("Información de la cuenta: " + cuentaSeleccionada);
+                    System.out.println("la informacion de la cuenta seleccionada es: " + cuentaSeleccionada);
 
                 }
                 case 2-> {
-                    System.out.print("Ingrese la cantidad a depositar: ");
+                    System.out.print("Ingrese la cantidad que desea depositar: ");
                     int deposito = teclado.nextInt();
                     cuentaSeleccionada.depositoDinero(deposito);
                 }
 
                 case 3-> {
-                    System.out.print("Ingrese la cantidad a retirar: ");
+                    System.out.print("Ingrese la cantidad que desea retirar: ");
                     int retiro = teclado.nextInt();
                     cuentaSeleccionada.retiroDinero(retiro);
                 }
 
                 case 4-> {
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("finalizando el programa, feliz dia ");
                     inicio = false;
                 }
                 default->
-                        System.out.println("Opción inválida, intente de nuevo.");
+                        System.out.println("por favor ingrese una opcion valida");
             }
         }
     }
